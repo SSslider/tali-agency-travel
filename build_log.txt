@@ -1,0 +1,42 @@
+
+> tali-agency@0.1.0 build
+> next build
+
+  [1m[38;2;173;127;168m▲ Next.js 14.2.35[39m[22m
+
+ [37m[1m [22m[39m Creating an optimized production build ...
+ [32m[1m✓[22m[39m Compiled successfully
+ [37m[1m [22m[39m Linting and checking validity of types ...
+ [37m[1m [22m[39m Collecting page data ...
+ [37m[1m [22m[39m Generating static pages (0/18) ...
+ [37m[1m [22m[39m Generating static pages (4/18) 
+ [37m[1m [22m[39m Generating static pages (8/18) 
+ [37m[1m [22m[39m Generating static pages (13/18) 
+ [32m[1m✓[22m[39m Generating static pages (18/18)
+ [37m[1m [22m[39m Finalizing page optimization ...
+ [37m[1m [22m[39m Collecting build traces ...
+
+[4mRoute (app)[24m                              [4mSize[24m     [4mFirst Load JS[24m
+┌ ○ /                                    11.6 kB         [37m[1m153 kB[22m[39m
+├ ○ /_not-found                          873 B          [37m[1m88.1 kB[22m[39m
+├ ○ /accessibility                       716 B           [37m[1m133 kB[22m[39m
+├ ○ /car-rental                          3.14 kB         [37m[1m144 kB[22m[39m
+├ ○ /contact                             3.87 kB         [37m[1m136 kB[22m[39m
+├ ○ /deals                               3.37 kB         [37m[1m135 kB[22m[39m
+├ ○ /faq                                 4.35 kB         [37m[1m145 kB[22m[39m
+├ ○ /flights                             3.33 kB         [37m[1m144 kB[22m[39m
+├ ○ /hotels                              3.26 kB         [37m[1m144 kB[22m[39m
+├ ○ /join-team                           2.36 kB         [37m[1m134 kB[22m[39m
+├ ○ /privacy                             716 B           [37m[1m133 kB[22m[39m
+├ ○ /reviews                             3.32 kB         [37m[1m135 kB[22m[39m
+├ ○ /terms                               716 B           [37m[1m133 kB[22m[39m
+├ ○ /tours                               3.24 kB         [37m[1m144 kB[22m[39m
+└ ○ /vacations                           3.31 kB         [37m[1m144 kB[22m[39m
++ First Load JS shared by all            [37m[1m87.3 kB[22m[39m
+  ├ chunks/117-4f5b424f20efdcae.js       31.7 kB
+  ├ chunks/fd9d1056-b11b2651f33aae7f.js  53.6 kB
+  └ other shared chunks (total)          1.9 kB
+
+
+○  (Static)  prerendered as static content
+

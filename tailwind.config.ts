@@ -9,11 +9,25 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        tal: {
+          navy: '#1B2A47',
+          offwhite: '#F8F9FA',
+          sand: '#E3D5CA',
+          sky: '#A9C2DF',
+          primary: '#1B2A47',
+          accent: '#A9C2DF',
+        },
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        sans: ['var(--font-heebo)', 'sans-serif'],
+        serif: ['var(--font-frank-ruhl)', 'serif'],
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-rtl'),
+  ],
 };
 export default config;

@@ -2,26 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #F8F9FA;
+    --foreground: #1B2A47;
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Accessibility Feature Classes */
+
+body.access-high-contrast {
+  filter: contrast(125%) saturate(150%);
+}
+
+body.access-grayscale {
+  filter: grayscale(100%);
+}
+
+body.access-text-spacing * {
+  letter-spacing: 0.1em !important;
+  word-spacing: 0.2em !important;
+  line-height: 1.8 !important;
+}
+
+body.access-highlight-links a, body.access-highlight-links button {
+  text-decoration: underline !important;
+  text-decoration-thickness: 3px !important;
+  text-underline-offset: 4px !important;
+  outline: 2px solid #FCD34D !important;
+  outline-offset: 2px !important;
+}
+
+body.access-dyslexia * {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+body.access-pause-animations *,
+body.access-pause-animations *::before,
+body.access-pause-animations *::after {
+  animation: none !important;
+  transition: none !important;
+}
+
+body.access-large-cursor,
+body.access-large-cursor * {
+  cursor: url('data:image/svg+xml;utf8,<svg width="48" height="48" viewBox="0 0 32 32" fill="black" xmlns="http://www.w3.org/2000/svg"><path d="M4 4L14 28L18 18L28 14L4 4Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/></svg>'), auto !important;
 }
