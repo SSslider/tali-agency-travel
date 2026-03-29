@@ -15,7 +15,7 @@ export function Footer() {
           <div className="col-span-1 md:col-span-1 space-y-4">
             <Link href="/" className="inline-block">
               <span className="block text-2xl font-serif font-bold text-tal-offwhite tracking-tight">
-                טלי Fly ✈️
+                טל fly ✈️
               </span>
               <span className="block text-sm font-sans text-tal-sand font-medium">
                 תיירות ונופש
@@ -64,9 +64,9 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-16 pt-8 border-t border-tal-offwhite/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-tal-offwhite/50 font-sans">
-          <p>© {currentYear} טלי Fly ✈️ תיירות ונופש. כל הזכויות שמורות.</p>
-          <div className="flex space-x-4 rtl:space-x-reverse">
+        <div className="border-t border-tal-navy/20 mt-16 pt-8 text-center text-sm font-light">
+          <p>© {currentYear} טל fly ✈️ תיירות ונופש. כל הזכויות שמורות.</p>
+          <div className="flex justify-center space-x-4 rtl:space-x-reverse mt-4 text-tal-offwhite/50">
             <Link href="/accessibility" className="hover:text-tal-offwhite transition-colors">הצהרת נגישות</Link>
             <Link href="/terms" className="hover:text-tal-offwhite transition-colors">תקנון האתר</Link>
             <Link href="/privacy" className="hover:text-tal-offwhite transition-colors">מדיניות פרטיות</Link>

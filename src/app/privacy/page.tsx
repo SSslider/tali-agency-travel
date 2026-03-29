@@ -11,8 +11,8 @@ export default function PrivacyPage() {
       />
       <div className="max-w-4xl mx-auto px-4 py-20 font-sans text-tal-navy/80 leading-relaxed text-justify space-y-6">
          <h2 className="text-2xl font-bold font-serif text-tal-navy">כללי</h2>
-         <p>
-           טלי Fly ✈️ תיירות ונופש מכבדת את פרטיות הגולשים באתר האינטרנט שלה. מטרת מסמך זה להסביר כיצד החברה משתמשת במידע 
+         <p className="mb-6 leading-relaxed">
+           טל fly ✈️ תיירות ונופש מכבדת את פרטיות הגולשים באתר האינטרנט שלה. מטרת מסמך זה להסביר כיצד החברה משתמשת במידע 
            הנמסר לה על ידי המשתמשים או נאסף בעת השימוש באתר.
          </p>
 

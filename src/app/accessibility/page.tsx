@@ -11,8 +11,8 @@ export default function AccessibilityPage() {
       />
       <div className="max-w-4xl mx-auto px-4 py-20 font-sans text-tal-navy/80 leading-relaxed text-justify space-y-6">
          <h2 className="text-2xl font-bold font-serif text-tal-navy">מבוא</h2>
-         <p>
-           טלי Fly ✈️ תיירות ונופש רואה חשיבות עליונה בהנגשת אתר האינטרנט לאנשים עם מוגבלויות, ובכך לאפשר למרבית האוכלוסייה לגלוש בקלות ובנוחות. 
+         <p className="mb-6 leading-relaxed">
+           טל fly ✈️ תיירות ונופש רואה חשיבות עליונה בהנגשת אתר האינטרנט לאנשים עם מוגבלויות, ובכך לאפשר למרבית האוכלוסייה לגלוש בקלות ובנוחות. 
            האתר נבנה בהתאם להוראות תקן הנגישות הישראלי (ת&quot;י 5568) ברמה AA.
          </p>
          

@@ -8,9 +8,9 @@ export default function ReviewsPage() {
   return (
     <div className="flex flex-col min-h-screen bg-tal-offwhite">
       <PageHeader 
-        title="המלצות ולקוחות מספרים" 
-        subtitle="המדד האמיתי להצלחה שלנו הוא החיוך שלכם כשאתם חוזרים הביתה. הנה מה שיש ללקוחות טלי Fly ✈️ להגיד."
-        imageSrc="/images/hero_landscape.png"
+        title="מכתבי תודה" 
+        subtitle="המדד האמיתי להצלחה שלנו הוא החיוך שלכם כשאתם חוזרים הביתה. הנה מה שיש ללקוחות טל fly ✈️ להגיד."
+        imageSrc="/images/reviews-hero.jpg"
         imageAlt="תמונת נוף הרים יוקרתית"
       />
       

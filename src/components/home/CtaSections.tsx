@@ -40,8 +40,9 @@ export function CtaSections() {
             <h3 className="relative z-10 text-3xl font-serif font-bold text-tal-offwhite mb-4">
               בואו לעוף איתנו! צירוף סוכנים
             </h3>
-            <p className="relative z-10 text-tal-offwhite/80 leading-relaxed font-sans mb-8 max-w-sm">
-              אנו מרחיבים את המשפחה ומחפשים סוכני נסיעות ויועצי תיירות פרילנסרים להצטרף לצוות &apos;טלי פלאי תיירות ונופש&apos;.
+            <h3 className="text-2xl font-serif font-bold text-tal-navy mb-4">דרושים סוכנים</h3>
+            <p className="text-tal-navy/80 mb-8 leading-relaxed">
+              אנו מרחיבים את המשפחה ומחפשים סוכני נסיעות ויועצי תיירות פרילנסרים להצטרף לצוות &apos;טל fly ✈️ תיירות ונופש&apos;.
             </p>
             <Link 
               href="/join-team"

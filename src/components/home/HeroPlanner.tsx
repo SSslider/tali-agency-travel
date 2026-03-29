@@ -44,7 +44,7 @@ export function HeroPlanner() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const message = `היי טלי Fly! אשמח לתכנן חופשה:
+    const message = `היי טל fly! אשמח לתכנן חופשה:
 יעד: ${formData.destination || 'גמיש'}
 הרכב: ${formData.who || 'טרם ידוע'}
 סגנון: ${formData.type || 'גמיש'}

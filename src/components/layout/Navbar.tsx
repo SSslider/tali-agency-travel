@@ -25,7 +25,7 @@ export function Navbar() {
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex flex-col items-center group">
               <span className="text-2xl font-serif font-bold text-tal-navy tracking-tight group-hover:text-tal-sky transition-colors">
-                טלי Fly ✈️
+                טל fly ✈️
               </span>
               <span className="text-sm font-sans text-tal-navy/80 font-medium">
                 תיירות ונופש

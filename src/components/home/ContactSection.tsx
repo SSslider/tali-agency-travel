@@ -79,7 +79,7 @@ export function ContactSection() {
                   <h4 className="font-bold text-xl mb-2 flex justify-center items-center gap-2">
                     <Send size={24} /> הודעתך נשלחה!
                   </h4>
-                  <p>תודה רבה! נציג טלי פלאי יחזור אליכם בהקדם האפשרי.</p>
+                  <p>תודה רבה! נציג טל fly יחזור אליכם בהקדם האפשרי.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-5">

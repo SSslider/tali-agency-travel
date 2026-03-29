@@ -61,8 +61,8 @@ export default function CarRentalPage() {
               <p className="text-tal-navy/80 text-lg font-sans leading-relaxed">
                 רבים חווים הפתעות לא נעימות בדלפקי השכרת הרכב בחו&quot;ל: חיובים נסתרים, שדרוגים שנכפו עליהם, ושאילתות ביטוח מסובכות בדיוק אחרי טיסה מעייפת.
               </p>
-              <p className="text-tal-navy/80 text-lg font-sans leading-relaxed">
-                כאשר אתם משריינים רכב דרך טלי Fly, אתם מגיעים מצוידים בשובר משולם שכולל מראש את הביטוחים המקיפים ביותר. אתם יודעים בדיוק מה שילמתם, בלי אותיות קטנות ובלי שטיקים.
+              <p className="font-sans leading-relaxed text-tal-navy/80 text-justify">
+                כאשר אתם משריינים רכב דרך טל fly, אתם מגיעים מצוידים בשובר משולם שכולל מראש את הביטוחים המקיפים ביותר. אתם יודעים בדיוק מה שילמתם, בלי אותיות קטנות ובלי שטיקים.
               </p>
               
               <ul className="space-y-4 pt-4">

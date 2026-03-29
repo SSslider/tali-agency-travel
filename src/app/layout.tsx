@@ -19,7 +19,7 @@ const frankRuhl = Frank_Ruhl_Libre({
 });
 
 export const metadata: Metadata = {
-  title: "Tal Fly | טלי תיירות ונופש",
+  title: "טל fly ✈️ תיירות ונופש",
   description: "הסוכנות המובילה לתכנון ועיצוב חופשות, טיסות, ומלונות בארץ ובעולם.",
 };
 

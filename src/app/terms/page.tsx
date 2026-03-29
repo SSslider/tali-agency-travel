@@ -11,8 +11,8 @@ export default function TermsPage() {
       />
       <div className="max-w-4xl mx-auto px-4 py-20 font-sans text-tal-navy/80 leading-relaxed text-justify space-y-6">
          <h2 className="text-2xl font-bold font-serif text-tal-navy">1. מבוא</h2>
-         <p>
-           ברוכים הבאים לאתר &quot;טלי Fly ✈️ תיירות ונופש&quot; (להלן: &quot;האתר&quot;). השימוש באתר כפוף לתנאים המפורטים בתקנון זה. 
+         <p className="mb-6 leading-relaxed">
+           ברוכים הבאים לאתר &quot;טל fly ✈️ תיירות ונופש&quot; (להלן: &quot;האתר&quot;). השימוש באתר כפוף לתנאים המפורטים בתקנון זה. 
            עצם גלישתך באתר מהווה הסכמה מלאה לתנאים אלו.
          </p>
 
@@ -23,8 +23,8 @@ export default function TermsPage() {
          </p>
 
          <h2 className="text-2xl font-bold font-serif text-tal-navy pt-6">3. קניין רוחני</h2>
-         <p>
-           כל זכויות היוצרים והקניין הרוחני באתר – לרבות טקסטים, תמונות (לרבות תמונות AI שנוצרו עבור האתר), עיצובים, קוד מקור ושם המותג – שייכים לטלי Fly תיירות ונופש. 
+         <p className="mb-6 leading-relaxed">
+           כל זכויות היוצרים והקניין הרוחני באתר – לרבות טקסטים, תמונות (לרבות תמונות AI שנוצרו עבור האתר), עיצובים, קוד מקור ושם המותג – שייכים לטל fly תיירות ונופש. 
            אין להעתיק, לשכפל, להפיץ או לעשות כל שימוש מסחרי במידע ללא אישור בכתב.
          </p>
 

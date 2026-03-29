@@ -56,9 +56,8 @@ export default function FlightsPage() {
             <h2 className="text-3xl md:text-5xl font-serif font-bold text-tal-navy leading-tight mb-6">
               למה להסתבך עם עשרות אתרים, כשאפשר פשוט לשלוח הודעה?
             </h2>
-            <p className="text-tal-navy/70 text-lg leading-relaxed">
-              האינטרנט מלא במנועי חיפוש זולים שמסתירים עמלות נסתרות, חוסר גמישות ואפס שירות לקוחות ברגע האמת. 
-              בטלי פליי, כרטיס הטיסה שלכם מגיע עם סוכן צמוד שדואג להכל מהרגע שהזמנתם ועד הנחיתה בארץ.
+            <p className="font-sans text-lg text-tal-navy/80 max-w-2xl mx-auto leading-relaxed">
+              בטל fly, כרטיס הטיסה שלכם מגיע עם סוכן צמוד שדואג להכל מהרגע שהזמנתם ועד הנחיתה בארץ.
             </p>
           </div>
 

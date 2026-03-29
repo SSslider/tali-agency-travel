@@ -12,7 +12,7 @@ type Message = {
 const KNOWLEDGE_BASE = [
   {
     keywords: ['שלום', 'היי', 'אהלן'],
-    response: 'שלום! אני נעה, העוזרת הווירטואלית של טלי פלאי. איך אוכל לעזור לכם לתכנן את החופשה הבאה שלכם?'
+    response: 'שלום! אני נעה, העוזרת הווירטואלית של טל fly. איך אוכל לעזור לכם לתכנן את החופשה הבאה שלכם?'
   },
   {
     keywords: ['טיסות', 'טיסה'],
@@ -56,7 +56,7 @@ export function Chatbot() {
     {
       id: '1',
       sender: 'bot',
-      text: 'שלום! 👋 אני עוזרת וירטואלית. אשמח לעזור לכם בבחירת חופשה, או לענות על שאלות. במה אוכל לעזור?'
+      text: 'שלום! אני נעה, העוזרת הווירטואלית של טל fly. איך אוכל לעזור לכם לתכנן את החופשה הבאה שלכם?'
     }
   ]);
   const [input, setInput] = useState('');
@@ -110,9 +110,9 @@ export function Chatbot() {
               <div className="bg-tal-sky/20 p-2 rounded-full">
                 <Bot size={24} className="text-tal-sky" />
               </div>
-              <div>
-                <h3 className="font-bold font-serif text-lg">טלי פלאי אונליין</h3>
-                <p className="text-xs text-tal-sky">זמין לשירותכם</p>
+              <div className="mr-3">
+                <h3 className="font-bold font-serif text-lg">טל fly אונליין</h3>
+                <p className="text-xs opacity-80">מענה אוטומטי מהיר</p>
               </div>
             </div>
             <button

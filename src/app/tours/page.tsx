@@ -123,9 +123,9 @@ export default function ToursPage() {
             {/* Sidebar - Why Organized? */}
             <div className="lg:col-span-4">
               <div className="bg-tal-offwhite p-8 rounded-3xl sticky top-28">
-                <h3 className="font-serif font-bold text-2xl text-tal-navy mb-6 text-center">
-                  היתרון של טלי Fly ✈️ בטיולים מאורגנים
-                </h3>
+                <h2 className="text-3xl font-serif font-bold text-tal-navy mb-4">
+                  היתרון של טל fly ✈️ בטיולים מאורגנים
+                </h2>
                 
                 <div className="space-y-6">
                   <div>

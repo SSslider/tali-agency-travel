@@ -30,7 +30,7 @@ export default function ContactPage() {
               
               <div className="relative z-10 mb-16">
                 <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">
-                  טלי פליי.<br />
+                  טל fly.<br />
                   <span className="text-tal-sky">תיירות ונופש פרימיום.</span>
                 </h2>
                 <p className="text-white/70 font-sans leading-relaxed">
