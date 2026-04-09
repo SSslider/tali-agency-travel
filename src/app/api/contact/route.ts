@@ -21,7 +21,7 @@ export async function POST(request: Request) {
     // Send the email using Resend
     const { data, error } = await resend.emails.send({
       from: 'Tali Agency <onboarding@resend.dev>', // Change this to your verified domain later (e.g. no-reply@talfly.co.il)
-      to: ['info@talfly.co.il'], // the destination email
+      to: ['tomerhertz@gmail.com'], // the destination email
       subject: `פנייה חדשה מאתר Tali Agency: ${topic || 'ללא נושא'}`,
       html: `
         <div dir="rtl" style="font-family: Arial, sans-serif;">
