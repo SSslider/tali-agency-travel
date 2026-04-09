@@ -6,16 +6,42 @@ import { Mail, Phone, MapPin, Send } from 'lucide-react';
 export function ContactSection() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [errorMsg, setErrorMsg] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+    setErrorMsg('');
+
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      firstName: formData.get('firstName'),
+      phone: formData.get('phone'),
+      topic: formData.get('topic'),
+      message: formData.get('message'),
+    };
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || 'אירעה שגיאה בשליחת הטופס.');
+      }
+
       setSuccess(true);
       setTimeout(() => setSuccess(false), 5000);
-    }, 1500);
+      e.currentTarget.reset();
+    } catch (err: any) {
+      setErrorMsg(err.message || 'אירעה שגיאה. אנא נסו שוב מאוחר יותר.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -86,17 +112,17 @@ export function ContactSection() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                     <div className="space-y-1">
                       <label htmlFor="firstName" className="block text-sm font-bold text-tal-navy">שם מלא *</label>
-                      <input type="text" id="firstName" required className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-tal-navy focus:ring-2 focus:ring-tal-sky focus:border-tal-sky transition-colors" placeholder="הקלידו שם מלא..." />
+                      <input type="text" id="firstName" name="firstName" required className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-tal-navy focus:ring-2 focus:ring-tal-sky focus:border-tal-sky transition-colors" placeholder="הקלידו שם מלא..." />
                     </div>
                     <div className="space-y-1">
                       <label htmlFor="phone" className="block text-sm font-bold text-tal-navy">טלפון נייד *</label>
-                      <input type="tel" id="phone" required className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-tal-navy focus:ring-2 focus:ring-tal-sky focus:border-tal-sky transition-colors text-left" placeholder="05X-XXXXXXX" dir="ltr" />
+                      <input type="tel" id="phone" name="phone" required className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-tal-navy focus:ring-2 focus:ring-tal-sky focus:border-tal-sky transition-colors text-left" placeholder="05X-XXXXXXX" dir="ltr" />
                     </div>
                   </div>
                   
                   <div className="space-y-1">
                     <label htmlFor="topic" className="block text-sm font-bold text-tal-navy">נושא הפנייה</label>
-                    <select id="topic" className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-tal-navy focus:ring-2 focus:ring-tal-sky focus:border-tal-sky transition-colors">
+                    <select id="topic" name="topic" className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-tal-navy focus:ring-2 focus:ring-tal-sky focus:border-tal-sky transition-colors">
                       <option>תכנון חופשה חדשה</option>
                       <option>בירור לגבי חופשה קיימת</option>
                       <option>הצטרפות כסוכן</option>
@@ -106,9 +132,15 @@ export function ContactSection() {
                   
                   <div className="space-y-1">
                     <label htmlFor="message" className="block text-sm font-bold text-tal-navy">תוכן ההודעה</label>
-                    <textarea id="message" rows={4} className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-tal-navy focus:ring-2 focus:ring-tal-sky focus:border-tal-sky transition-colors resize-none" placeholder="נשמח לשמוע במה אפשר לעזור..."></textarea>
+                    <textarea id="message" name="message" rows={4} className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-tal-navy focus:ring-2 focus:ring-tal-sky focus:border-tal-sky transition-colors resize-none" placeholder="נשמח לשמוע במה אפשר לעזור..."></textarea>
                   </div>
                   
+                  {errorMsg && (
+                    <div className="text-red-500 text-sm font-semibold text-center">
+                      {errorMsg}
+                    </div>
+                  )}
+
                   <button 
                     type="submit" 
                     disabled={isSubmitting}
