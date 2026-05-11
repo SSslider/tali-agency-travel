@@ -12,7 +12,7 @@ const OFFERS = [
     location: 'האיים המלדיביים',
     image: '/images/featured_tour_01_1773266985401.png',
     tags: ['זוגות', 'פרימיום', 'בטן גב'],
-    price: 'החל מ-₪8,900 לאדם',
+    fomo: '2 מקומות אחרונים למחזור הקרוב',
   },
   {
     id: 'europe',
@@ -20,7 +20,7 @@ const OFFERS = [
     location: 'צרפת',
     image: '/images/featured_tour_02_1773267002265.png',
     tags: ['חופשה רומנטית', 'קולינריה', 'תרבות'],
-    price: 'החל מ-₪3,200 לאדם',
+    fomo: 'הביקוש בשיאו - שריינו עכשיו!',
   },
   {
     id: 'family-italy',
@@ -28,7 +28,7 @@ const OFFERS = [
     location: 'איטליה, אגם גארדה',
     image: '/images/category_family.png',
     tags: ['משפחות', 'טבע', 'רכב שכור'],
-    price: 'השאירו פרטים להצעה',
+    fomo: 'השאירו פרטים להצעה מותאמת אישית',
   }
 ];
 
@@ -50,7 +50,7 @@ export function FeaturedOffers() {
             </p>
           </div>
           <Link 
-            href="/deals" 
+            href="#deals" 
             className="hidden md:flex items-center gap-2 text-tal-navy font-bold hover:text-tal-sky transition-colors pb-2 border-b-2 border-tal-navy hover:border-tal-sky"
           >
             <span>לכל ההצעות</span>
@@ -100,11 +100,11 @@ export function FeaturedOffers() {
                 </p>
                 
                 <div className="flex items-center justify-between pt-4 border-t border-tal-navy/10 mt-auto">
-                  <span className="font-bold text-tal-navy font-sans">
-                    {offer.price}
+                  <span className="font-bold text-red-600 text-sm animate-pulse font-sans">
+                    {offer.fomo}
                   </span>
                   <Link 
-                    href={`/vacations/${offer.id}`} 
+                    href="#contact" 
                     className="w-10 h-10 rounded-full bg-tal-navy text-white flex items-center justify-center group-hover:bg-tal-sky transition-colors shadow-md"
                   >
                     &larr;
@@ -118,7 +118,7 @@ export function FeaturedOffers() {
         {/* Mobile View All Button */}
         <div className="mt-10 text-center md:hidden">
           <Link 
-            href="/deals" 
+            href="#deals" 
             className="inline-flex items-center gap-2 text-tal-navy font-bold hover:text-tal-sky transition-colors pb-2 border-b-2 border-tal-navy hover:border-tal-sky"
           >
             <span>לכל ההצעות המשוגעות שלנו</span>

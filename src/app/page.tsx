@@ -7,6 +7,10 @@ import { Recommendations } from "@/components/home/Recommendations";
 import { FaqAccordion } from "@/components/home/FaqAccordion";
 import { CtaSections } from "@/components/home/CtaSections";
 import { ContactSection } from "@/components/home/ContactSection";
+import { FlightsSection } from "@/components/home/FlightsSection";
+import { HotelsSection } from "@/components/home/HotelsSection";
+import { ToursSection } from "@/components/home/ToursSection";
+import { CarRentalSection } from "@/components/home/CarRentalSection";
 
 export default function Home() {
   return (
@@ -14,8 +18,12 @@ export default function Home() {
       <HeroPlanner />
       <CategoryTiles />
       <TrustStrip />
-      <HowItWorks />
       <FeaturedOffers />
+      <FlightsSection />
+      <HotelsSection />
+      <ToursSection />
+      <CarRentalSection />
+      <HowItWorks />
       <Recommendations />
       <FaqAccordion />
       <CtaSections />

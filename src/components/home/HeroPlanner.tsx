@@ -50,7 +50,7 @@ export function HeroPlanner() {
 סגנון: ${formData.type || 'גמיש'}
 תקציב: ${formData.budget || 'טרם ידוע'}`;
 
-    window.open(`https://wa.me/972500000000?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/972524468884?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement | HTMLInputElement>) => {

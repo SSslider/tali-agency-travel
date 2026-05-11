@@ -8,30 +8,30 @@ const CATEGORIES = [
     id: 'vacations',
     name: 'חופשות מותאמות אישית',
     image: '/images/category_family.png',
-    link: '/vacations',
+    link: '#vacations',
     colSpan: 'col-span-1 md:col-span-2 lg:col-span-2'
   },
   {
     id: 'flights',
     name: 'מחלקת טיסות',
     image: '/images/category_flights.png',
-    link: '/flights',
+    link: '#flights',
     colSpan: 'col-span-1'
   },
   {
     id: 'hotels',
     name: 'מלונות וריזורטים',
     image: '/images/category_hotels.png',
-    link: '/hotels',
+    link: '#hotels',
     colSpan: 'col-span-1'
   },
 ];
 
 const QUICK_LINKS = [
-  { name: 'טיולים מאורגנים', link: '/tours' },
-  { name: 'השכרת רכב בחו״ל', link: '/car-rental' },
-  { name: 'דילים חמים', link: '/deals' },
-  { name: 'חופשות משפחתיות', link: '/vacations?type=family' },
+  { name: 'טיולים מאורגנים', link: '#tours' },
+  { name: 'השכרת רכב בחו״ל', link: '#car-rental' },
+  { name: 'דילים חמים', link: '#deals' },
+  { name: 'חופשות משפחתיות', link: '#vacations' },
 ];
 
 export function CategoryTiles() {

@@ -1,6 +1,5 @@
 'use client';
 
-import { PageHeader } from "@/components/ui/PageHeader";
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ShieldCheck, CreditCard, ArrowLeft, Key, Navigation, PhoneCall, CheckCircle2 } from 'lucide-react';
@@ -29,18 +28,12 @@ const BENEFITS = [
   }
 ];
 
-export default function CarRentalPage() {
+export function CarRentalSection() {
   return (
-    <div className="flex flex-col min-h-screen bg-white">
-      <PageHeader 
-        title="פשוט להתניע ולנסוע" 
-        subtitle="מפתחות לרכב חדש ובטוח שיחכה לכם בשדה התעופה. שקיפות מלאה בביטוחים, וליווי צמוד לנהיגה בראש שקט בכל העולם."
-        imageSrc="/images/hero_carrental.png"
-        imageAlt="רכב שטח יוקרתי בנסיעה על כביש חוף הררי ברקע שקיעה"
-      />
+    <section id="car-rental" className="flex flex-col bg-white scroll-mt-20">
       
       {/* Introduction & Value Proposition */}
-      <section className="py-24 bg-tal-offwhite relative overflow-hidden">
+      <div className="py-24 bg-tal-offwhite relative overflow-hidden">
         {/* Decorative Grid Background */}
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none" 
              style={{ backgroundImage: 'radial-gradient(var(--tw-colors-tal-navy) 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
@@ -56,13 +49,13 @@ export default function CarRentalPage() {
               className="space-y-8"
             >
               <h2 className="text-3xl md:text-5xl font-serif font-bold text-tal-navy leading-tight">
-                דלפק ההשכרה לא חייב להיות כאב ראש.
+                השכרת רכב: דלפק ההשכרה לא חייב להיות כאב ראש.
               </h2>
               <p className="text-tal-navy/80 text-lg font-sans leading-relaxed">
                 רבים חווים הפתעות לא נעימות בדלפקי השכרת הרכב בחו&quot;ל: חיובים נסתרים, שדרוגים שנכפו עליהם, ושאילתות ביטוח מסובכות בדיוק אחרי טיסה מעייפת.
               </p>
               <p className="font-sans leading-relaxed text-tal-navy/80 text-justify">
-                כאשר אתם משריינים רכב דרך טל fly, אתם מגיעים מצוידים בשובר משולם שכולל מראש את הביטוחים המקיפים ביותר. אתם יודעים בדיוק מה שילמתם, בלי אותיות קטנות ובלי שטיקים.
+                כאשר אתם משריינים רכב דרך טל fly (כחלק מחבילת החופשה שלכם), אתם מגיעים מצוידים בשובר משולם שכולל מראש את הביטוחים המקיפים ביותר. אתם יודעים בדיוק מה שילמתם, בלי אותיות קטנות ובלי שטיקים.
               </p>
               
               <ul className="space-y-4 pt-4">
@@ -76,10 +69,10 @@ export default function CarRentalPage() {
 
               <div className="pt-6">
                 <Link 
-                  href="/contact" 
+                  href="#contact" 
                   className="inline-flex items-center gap-2 bg-tal-navy text-white px-8 py-4 rounded-xl font-bold hover:bg-tal-sky transition-colors shadow-lg"
                 >
-                  <span>לקבלת הצעת מחיר לרכב</span>
+                  <span>דברו איתנו על החופשה הבאה שלכם</span>
                   <ArrowLeft size={20} className="rtl:-scale-x-100" />
                 </Link>
               </div>
@@ -102,14 +95,14 @@ export default function CarRentalPage() {
 
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Benefits Grid */}
-      <section className="py-24 bg-white">
+      <div className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-serif font-bold text-tal-navy mb-4">
-              סטנדרט שירות הפרימיום שלנו
+              סטנדרט שירות הפרימיום שלנו ברכבים
             </h2>
             <p className="text-gray-500 font-sans max-w-2xl mx-auto">
               לא מתפשרים על איכות הרכב, בטיחות הנוסעים, והשירות התומך מרגע ההזמנה ועד החזרת הרכב בשדה.
@@ -141,10 +134,10 @@ export default function CarRentalPage() {
             ))}
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Safety & Support Banner */}
-      <section className="bg-tal-navy text-white py-20 relative overflow-hidden">
+      <div className="bg-tal-navy text-white py-20 relative overflow-hidden mx-4 sm:mx-6 lg:mx-8 mb-24 rounded-3xl">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-tal-sky/20 to-transparent pointer-events-none" />
         <div className="max-w-5xl mx-auto px-4 text-center relative z-10">
           <PhoneCall size={48} className="mx-auto text-tal-sand mb-8" />
@@ -154,8 +147,8 @@ export default function CarRentalPage() {
             זמינות היא לא מילה גסה. היתרון הגדול שלנו הוא הליווי האנושי בוואטסאפ במקרי חירום והכוונה מדויקת לפני הנסיעה.
           </p>
         </div>
-      </section>
+      </div>
 
-    </div>
+    </section>
   );
 }

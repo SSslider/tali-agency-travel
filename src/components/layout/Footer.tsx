@@ -30,11 +30,11 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-serif font-semibold text-tal-sand mb-4">חופשות</h3>
             <ul className="space-y-3 text-sm font-sans text-tal-offwhite/80">
-              <li><Link href="/vacations" className="hover:text-tal-sky transition-colors">סגנונות חופשה</Link></li>
-              <li><Link href="/flights" className="hover:text-tal-sky transition-colors">מחלקת טיסות</Link></li>
-              <li><Link href="/hotels" className="hover:text-tal-sky transition-colors">מלונות וריזורטים</Link></li>
-              <li><Link href="/tours" className="hover:text-tal-sky transition-colors">טיולים מאורגנים</Link></li>
-              <li><Link href="/car-rental" className="hover:text-tal-sky transition-colors">השכרת רכב בחו״ל</Link></li>
+              <li><Link href="#vacations" className="hover:text-tal-sky transition-colors">סגנונות חופשה</Link></li>
+              <li><Link href="#flights" className="hover:text-tal-sky transition-colors">מחלקת טיסות</Link></li>
+              <li><Link href="#hotels" className="hover:text-tal-sky transition-colors">מלונות וריזורטים</Link></li>
+              <li><Link href="#tours" className="hover:text-tal-sky transition-colors">טיולים מאורגנים</Link></li>
+              <li><Link href="#car-rental" className="hover:text-tal-sky transition-colors">השכרת רכב בחו״ל</Link></li>
             </ul>
           </div>
 
@@ -42,9 +42,9 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-serif font-semibold text-tal-sand mb-4">תמיכה ושירות</h3>
             <ul className="space-y-3 text-sm font-sans text-tal-offwhite/80">
-              <li><Link href="/faq" className="hover:text-tal-sky transition-colors">שאלות נפוצות</Link></li>
-              <li><Link href="/reviews" className="hover:text-tal-sky transition-colors">המלצות מלקוחות</Link></li>
-              <li><Link href="/contact" className="hover:text-tal-sky transition-colors">צור קשר</Link></li>
+              <li><Link href="#faq" className="hover:text-tal-sky transition-colors">שאלות נפוצות</Link></li>
+              <li><Link href="#reviews" className="hover:text-tal-sky transition-colors">המלצות מלקוחות</Link></li>
+              <li><Link href="#contact" className="hover:text-tal-sky transition-colors">צור קשר</Link></li>
             </ul>
           </div>
 
@@ -67,9 +67,9 @@ export function Footer() {
         <div className="border-t border-tal-navy/20 mt-16 pt-8 text-center text-sm font-light">
           <p>© {currentYear} טל fly ✈️ תיירות ונופש. כל הזכויות שמורות.</p>
           <div className="flex justify-center space-x-4 rtl:space-x-reverse mt-4 text-tal-offwhite/50">
-            <Link href="/accessibility" className="hover:text-tal-offwhite transition-colors">הצהרת נגישות</Link>
-            <Link href="/terms" className="hover:text-tal-offwhite transition-colors">תקנון האתר</Link>
-            <Link href="/privacy" className="hover:text-tal-offwhite transition-colors">מדיניות פרטיות</Link>
+            <Link href="#" className="hover:text-tal-offwhite transition-colors">הצהרת נגישות</Link>
+            <Link href="#" className="hover:text-tal-offwhite transition-colors">תקנון האתר</Link>
+            <Link href="#" className="hover:text-tal-offwhite transition-colors">מדיניות פרטיות</Link>
           </div>
         </div>
       </div>

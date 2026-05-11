@@ -1,6 +1,5 @@
 'use client';
 
-import { PageHeader } from "@/components/ui/PageHeader";
 import Image from "next/image";
 import Link from 'next/link';
 import { motion } from 'framer-motion';
@@ -33,69 +32,57 @@ const PREMIUM_SERVICES = [
   }
 ];
 
-export default function FlightsPage() {
+export function FlightsSection() {
   return (
-    <div className="flex flex-col min-h-screen bg-white">
-      <PageHeader 
-        title="מחלקת טיסות מתקדמת" 
-        subtitle="אלגוריתמים לא יודעים לפתור משברים. אנחנו כן. שירות הזמנת טיסות אישי, מדויק וברמת גימור של מחלקה ראשונה."
-        imageSrc="/images/hero_flights.png"
-        imageAlt="תצפית מחלון מטוס נוסעים מעל העננים בזריחה"
-      />
+    <section id="flights" className="relative bg-white pt-24 pb-12 overflow-hidden scroll-mt-20">
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-tal-offwhite to-transparent pointer-events-none" />
       
-      <section className="py-24 bg-white relative overflow-hidden">
-        {/* Soft abstract background */}
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-tal-offwhite to-transparent pointer-events-none" />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          
-          <div className="text-center mb-20 max-w-3xl mx-auto">
-            <div className="inline-flex items-center justify-center p-3 rounded-2xl bg-tal-sky/10 mb-6">
-              <Plane className="w-6 h-6 text-tal-sky rtl:-scale-x-100" />
-            </div>
-            <h2 className="text-3xl md:text-5xl font-serif font-bold text-tal-navy leading-tight mb-6">
-              למה להסתבך עם עשרות אתרים, כשאפשר פשוט לשלוח הודעה?
-            </h2>
-            <p className="font-sans text-lg text-tal-navy/80 max-w-2xl mx-auto leading-relaxed">
-              בטל fly, כרטיס הטיסה שלכם מגיע עם סוכן צמוד שדואג להכל מהרגע שהזמנתם ועד הנחיתה בארץ.
-            </p>
+        <div className="text-center mb-20 max-w-3xl mx-auto">
+          <div className="inline-flex items-center justify-center p-3 rounded-2xl bg-tal-sky/10 mb-6">
+            <Plane className="w-6 h-6 text-tal-sky rtl:-scale-x-100" />
           </div>
-
-          {/* Premium Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {PREMIUM_SERVICES.map((service, idx) => (
-              <motion.div
-                key={idx}
-                initial={{ opacity: 0, scale: 0.95, y: 30 }}
-                whileInView={{ opacity: 1, scale: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: idx * 0.15, ease: "easeOut" }}
-                className="group relative bg-white p-8 rounded-[2rem] border border-gray-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.12)] transition-all duration-500 overflow-hidden flex flex-col h-full"
-              >
-                {/* Decorative background circle on hover */}
-                <div className={`absolute -right-10 -top-10 w-40 h-40 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-3xl ${service.color}`} />
-                
-                <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-8 relative z-10 transition-transform group-hover:-translate-y-2 duration-500 ${service.color}`}>
-                  {service.icon}
-                </div>
-                
-                <div className="relative z-10 flex-1 flex flex-col">
-                  <h3 className="font-bold text-xl text-tal-navy font-serif mb-4 leading-tight">
-                    {service.title}
-                  </h3>
-                  <p className="text-tal-navy/70 text-sm font-medium leading-relaxed mt-auto">
-                    {service.description}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-          
+          <h2 className="text-3xl md:text-5xl font-serif font-bold text-tal-navy leading-tight mb-6">
+            מחלקת טיסות: למה להסתבך עם עשרות אתרים, כשאפשר פשוט לשלוח הודעה?
+          </h2>
+          <p className="font-sans text-lg text-tal-navy/80 max-w-2xl mx-auto leading-relaxed">
+            בטל fly, כרטיס הטיסה שלכם מגיע עם סוכן צמוד שדואג להכל מהרגע שהזמנתם ועד הנחיתה בארץ. המושבים הכי טובים אוזלים מהר - השאירו פרטים ונמצא לכם את הטיסה המושלמת.
+          </p>
         </div>
-      </section>
+
+        {/* Premium Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-24">
+          {PREMIUM_SERVICES.map((service, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, scale: 0.95, y: 30 }}
+              whileInView={{ opacity: 1, scale: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: idx * 0.15, ease: "easeOut" }}
+              className="group relative bg-white p-8 rounded-[2rem] border border-gray-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.12)] transition-all duration-500 overflow-hidden flex flex-col h-full"
+            >
+              <div className={`absolute -right-10 -top-10 w-40 h-40 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-3xl ${service.color}`} />
+              
+              <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-8 relative z-10 transition-transform group-hover:-translate-y-2 duration-500 ${service.color}`}>
+                {service.icon}
+              </div>
+              
+              <div className="relative z-10 flex-1 flex flex-col">
+                <h3 className="font-bold text-xl text-tal-navy font-serif mb-4 leading-tight">
+                  {service.title}
+                </h3>
+                <p className="text-tal-navy/70 text-sm font-medium leading-relaxed mt-auto">
+                  {service.description}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
 
       {/* The VIP Experience Section */}
-      <section className="py-24 bg-tal-navy text-white relative overflow-hidden">
+      <div className="bg-tal-navy text-white relative overflow-hidden py-24 rounded-3xl mx-4 sm:mx-6 lg:mx-8">
         <div className="absolute inset-0 z-0">
           <Image 
             src="/images/hero_vacations.png" 
@@ -120,9 +107,9 @@ export default function FlightsPage() {
                 <span className="text-tal-sky text-sm font-bold tracking-widest uppercase">שירותי אקסטרה</span>
               </div>
               
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight">
+              <h3 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight">
                 כל פרט<br />מטופל מראש.
-              </h2>
+              </h3>
               
               <p className="text-white/80 text-lg leading-relaxed max-w-lg">
                 החל מבחירת המושב המדויק עם מרווח הרגליים הנכון, דרך הזמנת ארוחות מיוחדות ועד שירותי טרום-טיסה וטרקלינים. 
@@ -144,6 +131,16 @@ export default function FlightsPage() {
                   </li>
                 ))}
               </ul>
+              
+              <div className="pt-8">
+                <Link 
+                  href="#contact" 
+                  className="inline-flex items-center gap-3 bg-white text-tal-navy px-8 py-4 rounded-2xl font-bold hover:bg-tal-sky hover:text-white transition-all shadow-xl group"
+                >
+                  <ArrowLeft size={20} className="rtl:-scale-x-100 group-hover:-translate-x-1 transition-transform" />
+                  להזמנת טיסה בראש שקט
+                </Link>
+              </div>
             </motion.div>
             
             <motion.div 
@@ -161,7 +158,6 @@ export default function FlightsPage() {
                   fill 
                   className="object-cover"
                 />
-                {/* Floating Glass Box */}
                 <div className="absolute bottom-8 left-8 right-8 bg-white/10 backdrop-blur-xl border border-white/20 p-6 rounded-3xl">
                   <div className="flex items-center justify-between">
                     <div>
@@ -178,25 +174,7 @@ export default function FlightsPage() {
 
           </div>
         </div>
-      </section>
-
-      {/* Modern CTA */}
-      <section className="py-20 bg-tal-sky text-tal-navy text-center px-4">
-        <div className="max-w-3xl mx-auto space-y-8">
-          <h2 className="text-3xl md:text-5xl font-serif font-bold">לאן ממריאים בפעם הבאה?</h2>
-          <p className="text-xl opacity-90 font-medium">ככל שתפנו אלינו מוקדם יותר, כך נבטיח לכם מחירים משתלמים יותר.</p>
-          <div className="flex justify-center pt-8">
-            <Link 
-              href="/contact" 
-              className="inline-flex items-center gap-3 bg-tal-navy text-white px-10 py-5 rounded-2xl font-bold hover:bg-white hover:text-tal-navy transition-all shadow-xl group text-lg"
-            >
-              <ArrowLeft size={24} className="rtl:-scale-x-100 group-hover:-translate-x-1 transition-transform" />
-              בדיקת מחירי טיסות
-            </Link>
-          </div>
-        </div>
-      </section>
-
-    </div>
+      </div>
+    </section>
   );
 }

@@ -37,8 +37,8 @@ export function ContactSection() {
       setSuccess(true);
       setTimeout(() => setSuccess(false), 5000);
       e.currentTarget.reset();
-    } catch (err: any) {
-      setErrorMsg(err.message || 'אירעה שגיאה. אנא נסו שוב מאוחר יותר.');
+    } catch (err: unknown) {
+      setErrorMsg(err instanceof Error ? err.message : 'אירעה שגיאה. אנא נסו שוב מאוחר יותר.');
     } finally {
       setIsSubmitting(false);
     }
@@ -69,7 +69,7 @@ export function ContactSection() {
                     </div>
                     <div>
                       <p className="text-sm text-tal-offwhite/60 font-sans mb-1">טלפון ישיר / וואטסאפ</p>
-                      <p className="font-bold font-sans text-lg">050-0000000</p>
+                      <p className="font-bold font-sans text-lg">052-4468884</p>
                     </div>
                   </div>
                   
@@ -149,7 +149,7 @@ export function ContactSection() {
                     {isSubmitting ? 'שולח...' : 'שליחת הודעה'}
                   </button>
                   <p className="text-xs text-center text-tal-navy/50 font-sans mt-4">
-                    בלחיצה על שליחה אני מאשר/ת את <a href="/terms" className="underline hover:text-tal-navy">תקנון האתר</a>.
+                    בלחיצה על שליחה אני מאשר/ת את <a href="#" className="underline hover:text-tal-navy">תקנון האתר</a>.
                   </p>
                 </form>
               )}
