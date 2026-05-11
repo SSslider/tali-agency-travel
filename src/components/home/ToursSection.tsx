@@ -97,7 +97,7 @@ export function ToursSection() {
                       ההרשמה נסגרת בקרוב!
                     </span>
                     <Link 
-                      href="#contact" 
+                      href="/#contact" 
                       className="flex items-center gap-1 text-tal-sky font-bold hover:text-tal-navy transition-colors text-sm"
                     >
                       שריינו מקום <ChevronLeft size={16} />
@@ -144,7 +144,7 @@ export function ToursSection() {
 
               <div className="mt-8 pt-8 border-t border-tal-sand/20 text-center">
                 <p className="font-bold text-tal-navy mb-4">מתארגנים כקבוצה פרטית?</p>
-                <Link href="#contact" className="block w-full bg-white border-2 border-tal-navy text-tal-navy px-4 py-3 rounded-xl font-bold hover:bg-tal-navy hover:text-white transition-colors">
+                <Link href="/#contact" className="block w-full bg-white border-2 border-tal-navy text-tal-navy px-4 py-3 rounded-xl font-bold hover:bg-tal-navy hover:text-white transition-colors">
                   תפרו לנו טיול סגור
                 </Link>
               </div>

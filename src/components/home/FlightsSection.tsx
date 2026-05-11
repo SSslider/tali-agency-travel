@@ -134,7 +134,7 @@ export function FlightsSection() {
               
               <div className="pt-8">
                 <Link 
-                  href="#contact" 
+                  href="/#contact" 
                   className="inline-flex items-center gap-3 bg-white text-tal-navy px-8 py-4 rounded-2xl font-bold hover:bg-tal-sky hover:text-white transition-all shadow-xl group"
                 >
                   <ArrowLeft size={20} className="rtl:-scale-x-100 group-hover:-translate-x-1 transition-transform" />

@@ -149,7 +149,7 @@ export function ContactSection() {
                     {isSubmitting ? 'שולח...' : 'שליחת הודעה'}
                   </button>
                   <p className="text-xs text-center text-tal-navy/50 font-sans mt-4">
-                    בלחיצה על שליחה אני מאשר/ת את <a href="#" className="underline hover:text-tal-navy">תקנון האתר</a>.
+                    בלחיצה על שליחה אני מאשר/ת את <a href="/terms" className="underline hover:text-tal-navy">תקנון האתר</a>.
                   </p>
                 </form>
               )}

@@ -3,10 +3,9 @@ import { Resend } from 'resend';
 
 // Initialize the Resend client with your API key
 // Process.env will automatically read this from Vercel's environment variables
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(request: Request) {
   try {
+    const resend = new Resend(process.env.RESEND_API_KEY || 're_dummy_key');
     const body = await request.json();
     const { firstName, phone, topic, message } = body;
 

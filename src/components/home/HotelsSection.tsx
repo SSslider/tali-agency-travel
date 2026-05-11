@@ -107,7 +107,7 @@ export function HotelsSection() {
                     מחירים משתנים - צרו קשר
                   </span>
                   <Link 
-                    href="#contact" 
+                    href="/#contact" 
                     className="bg-tal-navy text-white px-5 py-2 rounded-xl font-bold hover:bg-tal-sky transition-colors shadow-md text-sm"
                   >
                     הזמינו עכשיו

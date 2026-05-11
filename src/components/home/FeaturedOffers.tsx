@@ -50,7 +50,7 @@ export function FeaturedOffers() {
             </p>
           </div>
           <Link 
-            href="#deals" 
+            href="/#deals" 
             className="hidden md:flex items-center gap-2 text-tal-navy font-bold hover:text-tal-sky transition-colors pb-2 border-b-2 border-tal-navy hover:border-tal-sky"
           >
             <span>לכל ההצעות</span>
@@ -104,7 +104,7 @@ export function FeaturedOffers() {
                     {offer.fomo}
                   </span>
                   <Link 
-                    href="#contact" 
+                    href="/#contact" 
                     className="w-10 h-10 rounded-full bg-tal-navy text-white flex items-center justify-center group-hover:bg-tal-sky transition-colors shadow-md"
                   >
                     &larr;
@@ -118,7 +118,7 @@ export function FeaturedOffers() {
         {/* Mobile View All Button */}
         <div className="mt-10 text-center md:hidden">
           <Link 
-            href="#deals" 
+            href="/#deals" 
             className="inline-flex items-center gap-2 text-tal-navy font-bold hover:text-tal-sky transition-colors pb-2 border-b-2 border-tal-navy hover:border-tal-sky"
           >
             <span>לכל ההצעות המשוגעות שלנו</span>

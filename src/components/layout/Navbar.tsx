@@ -5,13 +5,13 @@ import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 
 const NAV_LINKS = [
-  { href: '#vacations', label: 'חופשות' },
-  { href: '#flights', label: 'טיסות' },
-  { href: '#hotels', label: 'מלונות' },
-  { href: '#tours', label: 'טיולים מאורגנים' },
-  { href: '#car-rental', label: 'השכרת רכב' },
-  { href: '#deals', label: 'דילים' },
-  { href: '#contact', label: 'צור קשר' },
+  { href: '/#vacations', label: 'חופשות' },
+  { href: '/#flights', label: 'טיסות' },
+  { href: '/#hotels', label: 'מלונות' },
+  { href: '/#tours', label: 'טיולים מאורגנים' },
+  { href: '/#car-rental', label: 'השכרת רכב' },
+  { href: '/#deals', label: 'דילים' },
+  { href: '/#contact', label: 'צור קשר' },
 ];
 
 export function Navbar() {
@@ -49,7 +49,7 @@ export function Navbar() {
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center">
             <Link
-              href="#contact"
+              href="/#contact"
               className="bg-tal-navy text-tal-offwhite px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-tal-navy/90 transition-all shadow-sm"
             >
               בניית חופשה
@@ -85,7 +85,7 @@ export function Navbar() {
             ))}
             <div className="pt-4">
               <Link
-                href="#contact"
+                href="/#contact"
                 onClick={() => setIsOpen(false)}
                 className="block w-full text-center bg-tal-navy text-tal-offwhite px-5 py-3 rounded-xl text-base font-bold shadow-md"
               >

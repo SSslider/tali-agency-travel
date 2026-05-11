@@ -69,7 +69,7 @@ export function CarRentalSection() {
 
               <div className="pt-6">
                 <Link 
-                  href="#contact" 
+                  href="/#contact" 
                   className="inline-flex items-center gap-2 bg-tal-navy text-white px-8 py-4 rounded-xl font-bold hover:bg-tal-sky transition-colors shadow-lg"
                 >
                   <span>דברו איתנו על החופשה הבאה שלכם</span>
